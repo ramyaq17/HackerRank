@@ -1,0 +1,24 @@
+import java.util.*;
+import java.io.*;
+
+class Solution{
+    public static void main(String []argh){
+        Scanner in = new Scanner(System.in);
+        int num=in.nextInt();
+        for(int i=0;i<num;i++){
+             int a = in.nextInt();
+             double b = in.nextDouble();
+             double n = in.nextDouble();
+            double s=a;
+             for(int j=0;j<n;j++)
+             {
+                 s=s+Math.pow(2,j)*b;
+                 System.out.print((int)s + " ");
+             }
+            System.out.println();
+
+        }
+
+        in.close();
+    }
+}
